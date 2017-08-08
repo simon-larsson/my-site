@@ -75,7 +75,7 @@ shortStats : List String
 shortStats =
     [ """"name": "Simon Larsson","""
     , """"born": 1989,"""
-    , """"occupation": "Programmer","""
+    , """"occupation": "Developer","""
     , """"country": "Sweden","""
     , """"city": "Stockholm" """
     ]
