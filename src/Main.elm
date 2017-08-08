@@ -45,8 +45,7 @@ setRoute : Maybe Route -> Model -> ( Model, Cmd Msg )
 setRoute route model =
     case route of
         Nothing ->
-            -- TODO Load 404 page not found
-            ( model, Cmd.none )
+            ( { model | page = NotFound }, Cmd.none )
 
         Just Route.Home ->
             ( { model | page = Home Home.init }, Cmd.none )

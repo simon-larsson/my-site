@@ -9,3 +9,8 @@ homeLogoUrl =
 elmLogoUrl : String
 elmLogoUrl =
     "src/Assets/Images/elm_logo.svg"
+
+
+myPhotoUrl : String
+myPhotoUrl =
+    "src/Assets/Images/photo_me.png"

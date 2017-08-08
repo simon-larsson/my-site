@@ -10,5 +10,5 @@ import Html.Attributes exposing (class, tabindex, id, src, alt)
 view : Html msg
 view =
     main_ [ tabindex -1 ]
-        [ h1 [] [ text "Not Found" ]
+        [ div [ class "not-found-title" ] [ text """{ code: 404, error: "page not found" }""" ]
         ]

@@ -14,7 +14,7 @@ type alias Model =
 
 init : Model
 init =
-    Model "Resume" """ { "Simon": Developer }  """
+    Model "" ""
 
 
 

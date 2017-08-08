@@ -1,12 +1,148 @@
 /* site.css */
 
+/* ------------------------ About ------------------------ */
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 4em;
+}
+
+
+.about-left-curly, .about-right-curly {
+    font-size: 3000%;
+}
+
+.about-page-item {
+    display: flex;
+}
+
+.about-content-left-curly, .about-content-right-curly {
+    font-size: 2000%;
+}
+
+.about-content-right-curly {
+
+}
+
+.about-content-left-curly {
+
+}
+
+.summary-title {
+    font-size: 430%;
+}
+
+.summary-content {
+    width: 20em;
+    font-size: 120%;
+    padding-top: 2.6em;
+}
+
+.short-info {
+    display: flex;
+}
+
+.short-left-curly, .short-right-curly {
+    font-size: 2000%;
+    display: inline-flex;
+}
+
+.short-left-curly {
+
+}
+
+.short-right-curly {
+
+}
+
+
+.short-content {
+    padding-top: 1.4em;
+    font-size: 200%;
+}
+
+.short-title {
+    font-size: 280%;
+}
+
+.picture-title {
+ font-size: 500%;
+}
+
+.picture-content {
+    padding-top: 3em;
+
+}
+
+.my-picture {
+    height: 14em;
+    border-radius: 1em;
+}
+
+/* ----------------------- NotFound ----------------------- */
+
+.not-found-title {
+    width: 100%;
+    margin-top: 5em;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------ Shared ------------------------ */
+
+@font-face {
+    font-family:"PTSansNarrow";
+    src: url("Fonts/PT_Sans-Narrow-Web-Bold.ttf")
+}
+
+@font-face {
+    font-family:"PTSansNarrow";
+    src: url("Fonts/PT_Sans-Narrow-Web-Regular.ttf")
+}
+
+@font-face {
+    font-family:"PTSans";
+    src: url("Fonts/PT_Sans-Web-Bold.ttf")
+}
+
+@font-face {
+    font-family:"PTSans";
+    src: url("Fonts/PT_Sans-Web-Bold.ttf")
+}
+
+@font-face {
+    font-family:"PTSans";
+    src: url("Fonts/PT_Sans-Web-BoldItalic.ttf")
+}
+
+@font-face {
+    font-family:"PTSans";
+    src: url("Fonts/PT_Sans-Web-Italic.ttf")
+}
+
+@font-face {
+    font-family:"PTSans";
+    src: url("Fonts/PT_Sans-Web-Regular.ttf")
+}
+
 body {
     color: white;
     background-color: black;
+    font-family: PTSansNarrow;
 }
 
 p {
     margin: 0;
+}
+
+.page-body-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 4em;
 }
 
 .home-logo {
@@ -26,6 +162,7 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: black;
 }
 
 .footer-console {
@@ -137,7 +274,6 @@ p {
 
 .nav-button {
     font-size: 700%;
-    font-family: cursive;
     display: inline;
 }
 
@@ -145,10 +281,23 @@ p {
     display: inline;
 }
 
-.nav-curly-left {
+.nav-curly-left, .nav-curly-right {
     display: inline;
 }
 
-.nav-curly-right {
-    display: inline;
+.footer-contact {
+    display: flex;
+    font-size: 200%;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+
+.contact-separator {
+    margin-left: 0.1em;
+    margin-right: 0.3em;
+}
+
+.footer-contact-right-curly {
+    margin-left: 0.3em;
 }
