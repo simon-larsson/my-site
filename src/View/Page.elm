@@ -80,7 +80,7 @@ viewFooter =
                         ]
                     , div [ class "footer-console-item" ]
                         [ i [ class "fa fa-github nav-icon footer-console-icon" ] []
-                        , div [ class "console-github-description" ] [ text "The source code for this website is availible on GitHub. You can also look at my Elm SPA template which is the backbone of this site." ]
+                        , div [ class "console-github-description" ] [ text "The source code for this website is available on GitHub. You can also look at my Elm SPA template which is the backbone of this site." ]
                         , div [ class "console-label-and-link" ] [ div [ class "console-label" ] [ text "This website: " ], a [ href "https://github.com/simon-larsson/my-site" ] [ text "github.com/simon-larsson/simon-larsson.github.io" ] ]
                         , div [ class "console-label-and-link" ] [ div [ class "console-label" ] [ text "My Elm SPA template: " ], a [ href "https://github.com/simon-larsson/elm-spa-template" ] [ text "github.com/simon-larsson/elm-spa-template" ] ]
                         ]

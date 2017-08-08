@@ -10217,7 +10217,7 @@ var _simon_larsson$elm_template$View_Page$viewFooter = A2(
 																	},
 																	{
 																		ctor: '::',
-																		_0: _elm_lang$html$Html$text('The source code for this website is availible on GitHub. You can also look at my Elm SPA template which is the backbone of this site.'),
+																		_0: _elm_lang$html$Html$text('The source code for this website is available on GitHub. You can also look at my Elm SPA template which is the backbone of this site.'),
 																		_1: {ctor: '[]'}
 																	}),
 																_1: {
