@@ -508,4 +508,8 @@ p {
     .tech-item {
         font-size: 87%;
     }
+
+    .footer-container{
+        font-size: 160%;
+    }
 }
