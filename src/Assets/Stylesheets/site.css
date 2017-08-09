@@ -43,18 +43,18 @@
 
 /* ------------------------ About ------------------------ */
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 100%;
+}
+
 .about-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 4em;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    font-size: 80%;
 }
 
 .about-left-curly, .about-right-curly {
@@ -203,8 +203,8 @@ p {
 .home-logo {
     position: absolute;
     top: 35%;
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 30%;
+    width: 40%;
 }
 
 .elm-logo {
@@ -372,6 +372,8 @@ p {
     margin-left: 0.3em;
 }
 
+/* ------------------------ Media ------------------------ */
+
 /* Landscape tablets and medium desktops */
 @media (max-width: 900px) {
     .only-on-large {
@@ -384,8 +386,32 @@ p {
 }
 
 /* Landscape tablets and medium desktops */
-@media (max-width: 64em) {
+@media (max-width: 66em) {
     .about-hide-when-small {
         display: none;
+    }
+}
+
+@media (max-width: 117em) {
+    .about-container {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 60em) {
+    .home-logo {
+        position: absolute;
+        top: 35%;
+        margin-left: 35%;
+        width: 30%;
+    }
+}
+
+@media (min-width: 120em) {
+    .home-logo {
+        position: absolute;
+        top: 35%;
+        margin-left: 35%;
+        width: 30%;
     }
 }
