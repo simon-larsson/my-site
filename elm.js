@@ -10001,7 +10001,7 @@ var _simon_larsson$elm_template$View_Page$viewFooter = A2(
 						_elm_lang$html$Html$details,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('footer-console'),
+							_0: _elm_lang$html$Html_Attributes$class('footer-console only-on-large'),
 							_1: {ctor: '[]'}
 						},
 						{
@@ -10319,7 +10319,7 @@ var _simon_larsson$elm_template$View_Page$viewFooter = A2(
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('footer-console-separator-bottom'),
+								_0: _elm_lang$html$Html_Attributes$class('footer-console-separator-bottom only-on-large'),
 								_1: {ctor: '[]'}
 							},
 							{ctor: '[]'}),
@@ -10809,7 +10809,7 @@ var _simon_larsson$elm_template$Page_About$view = function (model) {
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('about-left-curly'),
+							_0: _elm_lang$html$Html_Attributes$class('about-left-curly about-hide-when-small'),
 							_1: {ctor: '[]'}
 						},
 						{
@@ -10907,8 +10907,23 @@ var _simon_larsson$elm_template$Page_About$view = function (model) {
 													},
 													{
 														ctor: '::',
-														_0: _elm_lang$html$Html$text('},'),
-														_1: {ctor: '[]'}
+														_0: _elm_lang$html$Html$text('}'),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_elm_lang$html$Html$div,
+																{
+																	ctor: '::',
+																	_0: _elm_lang$html$Html_Attributes$class('comma about-hide-when-small'),
+																	_1: {ctor: '[]'}
+																},
+																{
+																	ctor: '::',
+																	_0: _elm_lang$html$Html$text(','),
+																	_1: {ctor: '[]'}
+																}),
+															_1: {ctor: '[]'}
+														}
 													}),
 												_1: {ctor: '[]'}
 											}
@@ -10989,8 +11004,23 @@ var _simon_larsson$elm_template$Page_About$view = function (model) {
 																},
 																{
 																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('},'),
-																	_1: {ctor: '[]'}
+																	_0: _elm_lang$html$Html$text('}'),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_elm_lang$html$Html$div,
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html_Attributes$class('comma about-hide-when-small'),
+																				_1: {ctor: '[]'}
+																			},
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html$text(','),
+																				_1: {ctor: '[]'}
+																			}),
+																		_1: {ctor: '[]'}
+																	}
 																}),
 															_1: {ctor: '[]'}
 														}
@@ -11081,7 +11111,7 @@ var _simon_larsson$elm_template$Page_About$view = function (model) {
 								_elm_lang$html$Html$div,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('about-right-curly'),
+									_0: _elm_lang$html$Html_Attributes$class('about-right-curly about-hide-when-small'),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -11126,7 +11156,7 @@ var _simon_larsson$elm_template$Page_Resume$education = {
 };
 var _simon_larsson$elm_template$Page_Resume$techStack = {
 	ctor: '::',
-	_0: '\"languages\": [\"C#\", \"Elm\", \"Javascript\", \"Python\", \"Java\"],',
+	_0: '\"languages\": [\"C#\", \"Elm\", \"JavaScript\", \"Python\", \"Java\"],',
 	_1: {
 		ctor: '::',
 		_0: '\"platforms\": [\".NET\", \"Microsoft Azure\"],',
@@ -11135,7 +11165,7 @@ var _simon_larsson$elm_template$Page_Resume$techStack = {
 			_0: '\"databases\": [\"SQL Server\"],',
 			_1: {
 				ctor: '::',
-				_0: '\"versionControl\": [\"Git\", \"TFS\"],',
+				_0: '\"versionControl\": [\"Git\", \"TFS\", \"SVN\"],',
 				_1: {
 					ctor: '::',
 					_0: '\"operatingSystems\": [\"Windows\", \"Linux\"]',

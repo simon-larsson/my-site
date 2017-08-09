@@ -175,6 +175,9 @@
     src: url("Fonts/PT_Sans-Web-Regular.ttf")
 }
 
+
+
+
 body {
     color: white;
     background-color: black;
@@ -192,6 +195,9 @@ p {
     justify-content: center;
     padding-top: 6em;
     margin-bottom: 4em;
+}
+.comma {
+    display: inline;
 }
 
 .home-logo {
@@ -354,6 +360,7 @@ p {
     width: 100%;
     justify-content: center;
     background-color: black;
+    margin-bottom: -0.7em;
 }
 
 .contact-separator {
@@ -363,4 +370,22 @@ p {
 
 .footer-contact-right-curly {
     margin-left: 0.3em;
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 900px) {
+    .only-on-large {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-bottom: 0em;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 64em) {
+    .about-hide-when-small {
+        display: none;
+    }
 }

@@ -73,10 +73,10 @@ displayTextRow row =
 
 techStack : List String
 techStack =
-    [ """"languages": ["C#", "Elm", "Javascript", "Python", "Java"],"""
+    [ """"languages": ["C#", "Elm", "JavaScript", "Python", "Java"],"""
     , """"platforms": [".NET", "Microsoft Azure"],"""
     , """"databases": ["SQL Server"],"""
-    , """"versionControl": ["Git", "TFS"],"""
+    , """"versionControl": ["Git", "TFS", "SVN"],"""
     , """"operatingSystems": ["Windows", "Linux"]"""
     ]
 

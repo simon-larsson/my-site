@@ -13,11 +13,6 @@ type ActivePage
     | Resume
 
 
-{-| Take a page's Html and layout it with a header and footer.
-
-isLoading can be used to slow loading during slow transitions
-
--}
 layout : ActivePage -> Html msg -> Html msg
 layout page content =
     div []
@@ -61,7 +56,7 @@ viewFooter =
                 , div [] [ text "]" ]
                 , div [ class "footer-contact-right-curly" ] [ text "}" ]
                 ]
-            , details [ class "footer-console" ]
+            , details [ class "footer-console only-on-large" ]
                 [ summary [ class "footer-console-tab" ]
                     [ div [ class "footer-console-title" ] [ text "developer console" ]
                     ]
@@ -86,6 +81,6 @@ viewFooter =
                         ]
                     ]
                 ]
-            , div [ class "footer-console-separator-bottom" ] []
+            , div [ class "footer-console-separator-bottom only-on-large" ] []
             ]
         ]
