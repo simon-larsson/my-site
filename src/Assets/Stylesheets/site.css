@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .resume-content a:link, a:visited, a:active {
@@ -21,12 +21,12 @@
 
 .resume-page-item {
     display: flex;
-    font-size: 70%;
+    font-size: 80%;
 }
 
 .resume-page-project {
     display: flex;
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .description-content-buyout {
@@ -492,5 +492,20 @@ p {
         top: 35%;
         margin-left: 35%;
         width: 30%;
+    }
+}
+
+
+@media (max-width: 66em) {
+    .resume-page-item {
+        font-size: 100%;
+    }
+
+    .education-item {
+        font-size: 140%;
+    }
+
+    .tech-item {
+        font-size: 135%;
     }
 }
