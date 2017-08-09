@@ -7,13 +7,47 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 90%;
+}
+
+.resume-content a:link, a:visited, a:active {
+    color: #99CCFF;
+    color: white;
+}
+
+.resume-content a:hover {
+    color: lightgrey;
 }
 
 .resume-page-item {
     display: flex;
+    font-size: 70%;
+}
+
+.resume-page-project {
+    display: flex;
     font-size: 100%;
 }
 
+.description-content-buyout {
+    display: inline-flex;
+    width: 25em;
+    font-size: 70%;
+    padding-top: 0px;
+    padding-left: 1em;
+}
+
+.description-content-time {
+    display: inline-flex;
+    width: 25em;
+    font-size: 70%;
+    padding-top: 0px;
+    padding-left: 1em;
+}
+
+.description-title {
+    display: inline-block;
+}
 
 .tech-left-curly, .tech-right-curly {
     font-size: 2000%;
@@ -22,6 +56,7 @@
 .tech-content {
     padding-top: 2.0em;
     font-size: 200%;
+    min-width: 19em;
 }
 
 .tech-title {
@@ -36,8 +71,15 @@
 
 }
 
+
 .education-item {
     font-size: 120%;
+}
+
+
+.project-item {
+    width: 23.5em;
+    font-size: 90%;
 }
 
 
@@ -191,9 +233,14 @@ p {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding-top: 6em;
+    padding-top: 8em;
     margin-bottom: 4em;
 }
+
+.page-break {
+    width: 100%;
+}
+
 .comma {
     display: inline;
 }
@@ -224,6 +271,7 @@ p {
     left: 0;
     width: 100%;
     background-color: black;
+    border-top: solid;
 }
 
 .footer-console {
@@ -320,6 +368,8 @@ p {
     width: 100%;
     background-color: black;
     margin: 0;
+    padding-bottom: 0.3em;
+    border-bottom: solid;
 }
 
 .nav-item {
@@ -372,6 +422,39 @@ p {
 
 /* Landscape tablets and medium desktops */
 @media (max-width: 66em) {
+    .only-on-large {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-bottom: 0em;
+    }
+}
+
+/* Edge does not support the footer console */
+@supports (-ms-ime-align: auto) {
+    .only-on-large {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-bottom: 0em;
+    }
+}
+
+/* IE does not support the footer console */
+@supports (-ms-accelerator:true) {
+    .only-on-large {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-bottom: 0em;
+    }
+}
+
+/* IE does not support the footer console */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .only-on-large {
         display: none;
     }
