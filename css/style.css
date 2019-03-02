@@ -73,11 +73,14 @@ p {
 
 .img-border {
     border-radius: 2vw;
-    margin-bottom: 5vw;
 }
 
 .main-col {
     width: 46vw;
+}
+
+.text-block {
+    margin-bottom: 3vw;
 }
 
 .main-col-text {
