@@ -15,28 +15,18 @@ window.onscroll = function(){
         nav.style.backgroundColor = 'transparent';
     }
 
-    if (about.getBoundingClientRect().top >= 0) {  
-        if (typeof window.history.replaceState == 'function') {
-        history.replaceState({}, '', window.location.href.slice(0, -1));
-        }
-    }
-
-    if (about.getBoundingClientRect().top <= 0 && about.getBoundingClientRect().bottom >= 0) {
-        history.pushState(null,null,'#' + 'about');
-    }
-
-    if (projects.getBoundingClientRect().top <= 0 && projects.getBoundingClientRect().bottom >= 0) {
-        history.pushState(null,null,'#' + 'projects');
-    }
-
     if (resume.getBoundingClientRect().top <= 0) {
         var nav = document.querySelector('#top-menu');
         nav.style.backgroundColor = 'transparent';
-        history.pushState(null,null,'#' + 'resume');
     }
 }
 
+window.onhashchange = function() {
+    scrollToId(window.location.hash)
+}
+
 scrollToId = function(id){
+    id = id.replace('#','')
     history.pushState(null,null,'#' + id);
     document.getElementById(id + '-tile').scrollIntoView();
 }
