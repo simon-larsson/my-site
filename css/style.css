@@ -24,6 +24,10 @@ Wine red:   #950740
 Red:        #C3073F
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Gravity;
     margin: 0;
@@ -107,6 +111,40 @@ p {
     margin-bottom: 0.5vw;
 }
 
+#top-menu {
+    position: fixed;
+    font-size: 3vw;
+    display: inline-flex;
+    width: 100vw;
+    color: #6F2232;
+    padding-bottom: 1vw;
+}
+#top-menu a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    cursor: pointer;
+}
+
+#left-menu {
+    width: 20vw;
+    display: inline-flex;
+    padding-left: 2vw;
+}
+
+#middle-menu {
+    width: 60vw;
+    display: inline-flex;
+}
+
+#right-menu {
+    width: 20vw;
+    justify-content: right;
+    display: inline-flex;
+    padding-right: 2vw;
+}
+
 #hero-tile {
     font-family: Circula;
     background-color: #1A1A1D;
@@ -138,7 +176,7 @@ p {
     background-color: transparent;
 }
 
-#project-tile {
+#projects-tile {
     background-color: #4E4E50;
     color: lightgray;
     padding-top: 5vw;

@@ -5,10 +5,24 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/script.js"></script> 
     <meta charset="utf-8" />
   </head>
   <body>
+    <div id="top-menu">
+      <div id="left-menu">
+        <div><a class="fa fa-id-card-o" onclick="scrollToId('about')"></a></div>
+        <div><a class="fa fa-gears" onclick="scrollToId('projects')"></a></div>
+        <div><a class="fa fa-check-square-o" onclick="scrollToId('resume')"></a></div>  
+      </div>
+      <div id="middle-menu"></div>
+      <div id="right-menu">
+        <div><a class="fa fa-github" href="https://github.com/simon-larsson"></a></div>
+        <div><a class="fa fa-linkedin" href="https://www.linkedin.com/in/simon-larsson-7163b598/"></a></div>
+        <div><a class="fa fa-envelope-o" href="mailto:larssonsimon0@gmail.com"></a></div>
+      </div>
+    </div>
     <div id="hero-tile" class="tile">
         <div id="hero-name">simon larsson</div>
         <div id="hero-summary">data science | machine learning | programming</div>
@@ -30,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div id="project-tile" class="tile">
+    <div id="projects-tile" class="tile">
       <div class="section">
         <div class="margin-col"></div>
         <div class="tile-header">HOBBY PROJECTS</div>
