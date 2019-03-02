@@ -1,0 +1,151 @@
+@font-face { 
+    font-family: Circula; 
+    src: url("../font/circula_medium.otf"); 
+} 
+
+@font-face { 
+    font-family: Gravity; 
+    src: url("../font/Gravity-Regular.otf"); 
+} 
+
+/*
+Dark orange:    #E27D60
+Turqoise:       #85DCB
+Light orange:   #E8A87C
+Light purple:   #C38D9E
+Mint green:     #41B3A3
+*/
+
+/*
+Black:      #1A1A1D
+Grey:       #4E4E50
+Dark red:   #6F2232
+Wine red:   #950740
+Red:        #C3073F
+*/
+
+body {
+    font-family: Gravity;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.1vw;
+    margin-top: 0;
+}
+
+.tile {
+    width: 100%;
+    display: grid;
+}
+
+.margin-col {
+    width: 17vw;
+}
+
+.pic-col {
+    width: 20vw;
+    text-align: left;
+}
+
+.pic-col-img {
+    width: 15vw;
+    margin-bottom: 1vh;
+}
+
+.round-img {
+    border-width: 0.3vw;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: lightgray;
+}
+
+.tile-header {
+    font-size: 3vw;
+    padding: 2vw;
+    padding-left: 0;
+}
+
+.section {
+    display: inline-flex;
+}
+
+.img-border {
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+}
+
+.main-col {
+    width: 46vw;
+}
+
+.main-col-text {
+    width: 40vw;
+}
+
+.main-col-header {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.main-col-header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-col-header a:hover {
+    color: #6F2232;
+}
+
+.main-col-sub-header {
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+#hero-tile {
+    font-family: Circula;
+    background-color: #1A1A1D;
+    height: 100vh;
+    text-align: center;
+    display: block;
+}
+
+#hero-name {
+    padding-top: 30vh;
+    font-size: 10vw;
+    color: #6F2232;
+}
+
+#hero-summary {
+    font-size: 2vw;
+    color: #6F2232;
+}
+
+#about-tile {
+    background-color: #6F2232;
+    color: lightgray;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+
+#about-image {
+    width: 10vw;
+    background-color: transparent;
+}
+
+#project-tile {
+    background-color: #4E4E50;
+    color: lightgray;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+
+#resume-tile {
+    background-color: #1A1A1D;
+    color: lightgray;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+
+

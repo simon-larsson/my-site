@@ -1,25 +1,259 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Simon Larsson</title>
-		<script src="elm.js"></script>
-		<link rel="stylesheet" type="text/css" href="src/Assets/Stylesheets/site.css" />
-		<link rel="stylesheet" type="text/css" href="src/Assets/Stylesheets/font-awesome/css/font-awesome.min.css" />
-		<link rel="icon" sizes="192x192" href="src/Assets/Images/favicon.png" />	 
-	</head>
-	<body id="page-body">
-		<script>
-			var app = Elm.Main.fullscreen();
-		</script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-104407528-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>simon larsson</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script> 
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="hero-tile" class="tile">
+        <div id="hero-name">simon larsson</div>
+        <div id="hero-summary">data science | machine learning | programming</div>
+    </div>
+    <div id="about-tile" class="tile">
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">ABOUT ME</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+            <img class="pic-col-img round-img" src="./image/simon_larsson.png" alt="simon larsson"> 
+        </div>
+        <div class="main-col">
+          <p>My passions are data science, machine learning and programming. I love unleashing the inherent power of data and to make it solve real problems. My motto is to never stop learning, be better every day!</p>
+          <p>I live and work in Stockholm as a consultant. In my work I do predictive modelling, statistical machine learning, data analysis and build data pipelines. I have been involved in all stages, from proof of concept to building production systems. I truly enjoy what I do and in my spare time I am always doing some hobby project.</p>
+          <p>When I am not geeking out I like to take long trips to other parts of the world. Preferably with a vastly different culture than ours. I am also a big foodie, always looking for the next cool restaurant. I love being healthy with clean food, weightlifting and yoga.</p>
+        </div>
+      </div>
+    </div>
+    <div id="project-tile" class="tile">
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">HOBBY PROJECTS</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <a href="https://github.com/simon-larsson/pokemon-name-generator">
+            <img class="pic-col-img img-border" src="./image/pokemon.png" alt="pokemon">
+          </a>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">
+            <a href="https://github.com/simon-larsson/pokemon-name-generator">Pokémon Name Generator</a>
+          </div>
+          <p>At work we want to name our projects after pokémon, but our legal department did not like the idea. To solve this I built a name generator that generates truly unique pokémon-esque names.</p>
+          <p>It is a Char-RNN based on Andrej Karpathy's famous design. Built in Keras, implemented as a generic char-level LSTM text generator that can generate any text it is trained on.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Python, Keras, Tensorflow, Pandas, numpy]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+           <a href="https://github.com/simon-larsson/kaggle">
+            <img class="pic-col-img img-border" src="./image/kaggle.png" alt="kaggle">
+          </a>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">
+            <a href="https://github.com/simon-larsson/kaggle">Kaggle</a>
+          </div>
+          <p>Kaggle is a platform where people in data science can compete for the best solution. Kaggle also has a nice community where it is possible to learn from the best!</p>
+          <p>Although I have only done one proper competition, Home Credit Default Risk, placing in the top 19%, my Kaggle repo is still holds many of my other tinkerings.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Python, numpy, Pandas, scikit-learn, LightGBM, Keras, Tensorflow]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <a href="https://github.com/GeorgeHanna/stickboi">
+            <img class="pic-col-img img-border" src="./image/stickboi.png" alt="stickboi">
+          </a>
+        </div> 
+        <div class="main-col">
+          <div class="main-col-header">
+            <a href="https://github.com/GeorgeHanna/stickboi">Stickboi</a>
+          </div>
+          <p>Inspired by Getting Over It, Stickboi is a frustrating game where you control a stick named Stickboi. The game has been described as "the closest you can come to experience how it feels to be a stick".</p>
+          <p>In development, working together with a friend. It is built just for fun and to learn a bit of game development.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[C#, Unity, Python]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <a href="https://github.com/simon-larsson/elm-spa-template">
+            <img class="pic-col-img img-border" src="./image/elm.png" alt="elm">
+          </a>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">
+            <a href="https://github.com/simon-larsson/elm-spa-template">Elm SPA Template</a>
+          </div>
+          <p>Elm is a small purely functional Haskell-like language/framework for web frontend. When I was tasked with using it for a work project I found that there was few resources on how to effectively build a SPA solution. After the project was done I took what I had learned and built a small SPA template to start projects rapidly and made it open source.</p>
+          <p>The template has been used by both companies and people who had just gotten into Elm and wanted a good scalable foundation to build upon.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Elm, Javascript, HTML]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">WORK PROJECTS</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/seavus.png" alt="seavus">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">Webshop Item Error Detection</div>
+          <p>A webshop had issues with a large number of human errors in their database that led to customer complaints. The solution was to continuously train a machine learning model on items with errors and then scan the database to find unknown errors.</p>
+          <p>The core is an ensemble of both supervised and unsupervised machine learning methods. Comes as a complete application with a UI tool for labelling and error corrections.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Python, NLP, scikit-learn, Tensorflow, C#, .NET]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/tellox.png" alt="tellox">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">Factoring Application</div>
+          <p>Consulting for a large scandinavian bank who bought a new factoring system. The project was to integrate it into existing application eco system and giving it a frontend.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Scala, Ruby on Rails]</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/tellox.png" alt="tellox">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">Financial Application</div>
+          <p>Web application for a large Scandinavian bank where loan and leasing contracts can be finalized with a buyout. Filled with fun financial calculations and models. Also heavy on integrations with various sister systems.</p>
+          <p>Functional programming top to bottom with a Scala API backend and Elm SPA frontend. I was responsible for building a SPA architechture which I later based an open source project on.</p>
+          <p>Tech: &nbsp&nbsp&nbsp[Elm, Scala, Jenkins, Docker]</p>
+        </div>
+      </div>
+    </div>
+    <div id="resume-tile" class="tile">
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">EDUCATION</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/lth.png" alt="lth">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">The Faculty of Engineering at Lund University</div>
+          <div class="main-col-sub-header">Master of Science in Electrical Engineering (MSEE)</div>
+          <div class="main-col-sub-header">Control Theory</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">EXPERIENCE</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/seavus.png" alt="seavus">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">Seavus</div>
+          <div class="main-col-sub-header">AI Developer</div> 
+          <p>Seavus is a large tech consultancy with offices around the globe. Having various different areas of expertice such as finance, gaming and recently AI.</p>
+          <p>I work as part of Seavus' DoAI team. We build custom machine learning solutions for customers in all kinds of industries.</p>   
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/tellox.png" alt="tellox">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">Tellox</div>
+          <div class="main-col-sub-header">Software Developer</div>
+          <p>Tellox is a small consultancy that holds a lot of knowledge in the domain of banking software. They employ many of the architects of the old COBOL banking systems that still are in use today.</p>
+          <p>I worked with building web based financial applications, often interfacing with old COBOL systems to connect them to the web.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <img class="pic-col-img img-border" src="./image/bnr.png" alt="bnr">
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">B&R Industrial Automation </div>
+          <div class="main-col-sub-header">Application Engineer</div>
+          <p>B&R was previously the worlds largest privately owned automation company before it was bought by ABB.</p>
+          <p>Started as a trainee in Austria and then went home to be an Application Engineer consulting in Stockholm. Majority of my time at the company was spent doing robotics and motions control applications, such as building software for CNC waterjet cutting machines</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="tile-header">TECHNOLOGY</div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Languages</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[Python, C#, Elm, Scala, Java, Javascript]</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Machine Learning</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[scikit-learn, Tensorflow, Keras, Pandas, numpy]</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Databases</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[SQL Server, MongoDb]</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Visualization</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[matplotlib, Seaborn, HTML, CSS]</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Cloud</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[Azure]</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="margin-col"></div>
+        <div class="pic-col">
+          <div class="main-col-header">Operating Systems</div>
+        </div>      
+        <div class="main-col">
+          <div class="main-col-header">[Windows, Linux]</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
