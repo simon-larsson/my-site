@@ -1,8 +1,6 @@
 window.onscroll = function(){
 
     var summary = document.querySelector('#hero-summary');
-    var about = document.querySelector('#about-tile');
-    var projects = document.querySelector('#projects-tile');
     var resume = document.querySelector('#resume-tile');
 
     if (summary.getBoundingClientRect().bottom <= 0){
