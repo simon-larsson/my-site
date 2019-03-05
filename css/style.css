@@ -111,20 +111,38 @@ p {
     margin-bottom: 0.5vw;
 }
 
+.menu-item {
+    display: flex;
+    justify-content: center;
+    border: 0.2vw solid #6F2232;
+    padding: 1vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    margin-left: 0.1vw;
+    margin-right: 0.1vw;
+    
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1vw 0 rgba(111, 34, 50, 1);
+}
+
 #top-menu {
     position: fixed;
-    font-size: 3vw;
+    font-size: 2.5vw;
     display: inline-flex;
     width: 100vw;
     color: #6F2232;
     padding-bottom: 1vw;
+    padding-top: 1vw;
 }
 #top-menu a {
     text-decoration: none;
     color: inherit;
-    padding-right: 1vw;
-    padding-top: 1vw;
     cursor: pointer;
+    padding-top: 0.3vw;
 }
 
 #left-menu {

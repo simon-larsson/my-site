@@ -1,7 +1,6 @@
 window.onscroll = function(){
 
     var summary = document.querySelector('#hero-summary');
-    var resume = document.querySelector('#resume-tile');
 
     if (summary.getBoundingClientRect().bottom <= 0){
         var nav = document.querySelector('#top-menu');
@@ -9,11 +8,6 @@ window.onscroll = function(){
     }
 
     if (summary.getBoundingClientRect().top >= 0) {
-        var nav = document.querySelector('#top-menu');
-        nav.style.backgroundColor = 'transparent';
-    }
-
-    if (resume.getBoundingClientRect().top <= 0) {
         var nav = document.querySelector('#top-menu');
         nav.style.backgroundColor = 'transparent';
     }
